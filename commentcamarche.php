@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 
 <html>
-
 <head>
-	<title>La Box du Pays Basque - Accueil</title>
+	<title>La Box du Pays Basque - Comment ça marche ?</title>
 	<meta charset="UTF-8">
+	<meta name="description" content="Pour comprendre le principe et le fonctionnement de La Box du Pays Basque.">
 </head>
-
 <body>
 
 <header>
 	<div>
 		<ul>
 			<li>
-			<a href=""><img src="images/flag-en.png"> English version</a>
+			<a href=""><img src="img/flag-en.png"> English version</a>
 			</li>
 		
 			<li>		
-			<a href=""><img src="images/picto-cadenas-ferme-gris.jpg" width="25px"> Se connecter / S'inscrire</a>
+			<a href=""><img src="img/picto-cadenas-ferme-gris.jpg" width="25px"> Se connecter / S'inscrire</a>
 			</li>
 		
 			<li>
-			<a href=""><img src="images/picto_panier.png" width="25px"> Mon panier</a>
+			<a href=""><img src="img/picto_panier.png" width="25px"> Mon panier</a>
 			</li>
 		</ul>
 	</div>
@@ -29,7 +28,7 @@
 	<nav>
 		<ul>
 			<li>
-			<a href="index.html"><img src="images/Logo_LBDP_Petit.jpg" width="50px"></a>
+			<a href="index.html"><img src="img/Logo_LBDP_Petit.jpg" width="50px"></a>
 			</li>
 		
 			<li>
@@ -56,9 +55,7 @@
 </header>
 
 <section>
-	<img src="images/gelee-piment.png">
-	<h1>Chaque mois, recevez chez vous une sélection de 4 à 8 produits gourmets du Pays Basque.</h1>
-	<div><a href="">En savoir plus ></a></div>
+	<h1>Page Comment ça marche ? - <em>COMING SOON</em></h1>
 </section>
 
 <footer>
@@ -88,6 +85,7 @@
 			</li>
 
 </footer>
+
 
 </body>
 </html>
