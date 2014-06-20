@@ -43,7 +43,7 @@
         	<a href="#">Comment<br>ça marche ?</a>
         </li>
         <li>
-        	<a href="#">Les produits</a>
+        	<a href="#">Les produits bouh</a>
         </li>
         <li>
         	<a href="#">S'abonner</a>
