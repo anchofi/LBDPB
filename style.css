@@ -1,0 +1,245 @@
+
+/*------------------------------------ STYLES HEADER + FOOTER + HOME PAGE ---------------------------*/
+
+/*------------------------- Style main-nav = NOT OK --------------------------*/
+
+/*----- Style des nav -----*/
+
+#menu-item-141-en a { /* Item English version dans nav sec */
+	font-family: Myriad Web Pro;
+	color: black;
+}
+
+#menu-item-150-fr a { /* Item Version française dans nav sec */
+	font-family: Myriad Web Pro;
+	color: black;
+}
+
+#menu-item-143 a { /* Se connecter / S'inscrire dans nav sec */
+	font-family: Myriad Web Pro;
+	color: black;
+}
+
+.picto-cadenas {
+	display: inline-block;
+	width: 64px;
+	height: 24px;
+	background: url(img/lock.png);
+}
+
+
+#menu-item-142 a { /* Mon Panier dans nav sec */
+	font-family: Myriad Web Pro;
+	color: black;
+}
+
+#menu-item-151 a { /* Sign in-Log in dans nav sec */
+	font-family: Myriad Web Pro;
+	color: black;
+}
+
+#menu-item-152 a { /* My cart dans nav sec */
+	font-family: Myriad Web Pro;
+	color: black;
+}
+
+.row-nav-secondaire {
+	height: 5px;
+}
+
+#menu-item-114 a { /* Comment ça marche dans nav principale */
+	padding-top: 15px;
+	padding-left: 35px;
+}
+
+#menu-item-113 a { /* Les produits dans nav principale */
+	padding-top: 23px;
+	padding-left: 45px;
+}
+
+#menu-item-112 a { /* S'abonner dans nav principale */
+	padding-top: 23px;
+	padding-left: 45px;
+}
+
+#menu-item-111 a { /* Offrir dans nav principale */
+	padding-top: 23px;
+	padding-left: 45px;
+}
+
+#menu-item-115 a { /* Boutique dans nav principale */
+	padding-top: 23px;
+	padding-left: 47px;
+}
+
+#menu-item-106 a { /* The Products dans nav principale */
+	padding-top: 23px;
+}
+
+#menu-item-107 a { /* Subscribe dans nav principale */
+	padding-top: 23px;
+}
+
+#menu-item-105 a { /* Offer dans nav principale */
+	padding-top: 23px;
+}
+
+#menu-item-104 a { /* E-shop dans nav principale */
+	padding-top: 23px;
+}
+
+.container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 200px;
+	padding-right: 15px;
+}
+
+.navbar li {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 18px;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.navbar .container .navbar-brand, .navbar .container-fluid .navbar-brand { /* .navbar-brand est mon logo dans ma nav */
+	margin-top: -28px;
+}
+
+.navbar-default .navbar-nav .active a { /* .active est la classe de ma nav qui indique le comportement de la nav sur la page active, la page du site sur laquelle on se trouve */
+	/* color: red; serait la couleur du texte sur la page active */
+	background: transparent; /* Remplace toutes les valeurs de background-... */
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: black;
+}
+
+.navbar-default .navbar-nav .active a:hover {
+	background-color: transparent;
+}
+
+#bs-example-navbar-collapse-1 ul li a:hover {
+	color: black;
+}
+
+.navbar.green {
+	background: green;
+	border: none;
+	border-radius: 0;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav li a {
+	color: white;
+	padding-top: 15px;
+}
+
+
+.foot li {
+	display: inline;
+}
+
+
+.foot {
+	text-align: center;
+	padding-top: 2px;
+	line-height: 25px;
+	font-family: Myriad Web Pro;
+}
+
+
+
+/*---------------------- Style section = NOT OK -----------------------*/
+
+/* Avec cette image de fond en hp, mon footer n'est pas cassé dans ma front-page.php, alors que sur les autres pages sans image de fond, footer cassé ! */
+.partie-centrale {
+	background: url(img/Guethary_2.png);	
+}
+
+#img-home {
+	height: 580px;
+}
+
+.accroche {
+	font-family: Myriad Web Pro;
+	font-size: 30px;
+	font-weight: bold;
+	color: green;
+	padding-top: 65px;
+	padding-bottom: 45px;
+	padding-left: 20px;
+}
+
+.cta-hp {
+	font-family: Myriad Web Pro;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px;
+	border: solid;
+	border-color: green;
+	text-align: center;
+	width: 230px;
+	float: right;
+	color: green;
+	background-color: white;
+}
+
+.cta-hp a {
+	color: green;
+}
+
+/* Ci-dessous : ce qui se passe au roll over sur mon cta */
+.cta-hp:hover { 
+	color: white;
+	text-decoration: none;
+	border-color: white; 
+	background-color: green;
+}
+
+
+/*------------------------------------------- Style footer -----------------------*/
+
+
+.foot a {
+	color: #42CA7E;
+	text-decoration: none;
+}
+
+
+
+
+/*------------------------------------------- Style foot bootstrap= OK -----------------------*/
+
+.navbar {
+	border-radius: 0;
+}
+
+
+/*------------------------------------------- Style WooCommerce -----------------------*/
+
+/*
+.woocommerce-container {
+	padding-top: 30px;
+}
+*/
+
+
+/* ----------------------------- Media Queries ---------------------------------------------------- */
+
+@media (min-width: 500px) {
+	body {
+		/* background-color: black; */
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-nav {
+		float: left;
+		padding-top: 5px;
+	}
+}
+
+
+
+

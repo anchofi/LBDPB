@@ -1,65 +1,51 @@
+
 <footer>
 		<ul class="foot">
 			<li>
-			Copyright © La Box du Pays Basque -
+			Copyright © La Box du Pays Basque</a> -
 			</li>
 
 			<li>
-			<a href="#">Paiement sécurisé -</a>
+			<a href="#">Paiement sécurisé</a> -
 			</li>
 
 			<li>
-			<a href="#">Mentions légales / CGV -</a>
+			<a href="#">Mentions légales / CGV</a> -
 			</li>
 
 			<li>
-			<a href="#">FAQ -</a>
-			</li>
-
-			<li>
-			<a href="#">Newsletter -</a>
+			<a href="#">FAQ</a> -
 			</li>
 
 			<li>
 			<a href="mailto:bonjour@laboxdupaysbasque.com">Contact</a>
 			</li>
+		</ul>
 
 
 
-	<!-- debut champ et bouton submit pour email ou newsletter -->
+<!-- Intégration MailChimp pour email ou newsletter -->
 
-
-<div class="navbar navbar-inverse" role="navigation">
-    <div class="container">    
-        <div class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right" role="form">
-              <div class="form-group">
-                <input type="text" placeholder="Email pour newsletter" class="form-control">
-              </div>
-              <button type="submit" class="btn btn-success">Submit</button>
-            </form>
-        </div><!--/.navbar-collapse -->
-   </div>
-</div>
-
-
-	<!-- fin champ et bouton submit pour email ou newsletter -->
-
-
+<div id="mc_embed_signup">
+	<form action="http://laboxdupaysbasque.us8.list-manage.com/subscribe/post?u=a3c4828996625dfa68b7d611b&amp;id=9320041a2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="E-mail pour recevoir les infos de La Box du Pays Basque" required style="display:inline; width:350px; font-family:Myriad Web Pro; font-size:13px; text-align: center; margin-left: 430px; margin-top: -15px;">
+    	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    	<div style="position: absolute; left: -5000px;"><input type="text" name="b_a3c4828996625dfa68b7d611b_9320041a2a" tabindex="-1" value=""></div>
+    	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="display:inline; width:120px; font-family: Myriad Web Pro; margin-left:-50px; margin-top: -15px;" >
+    	</div>
+	</form>
+</div><!--End mc_embed_signup-->
 
 </footer>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-        <!-- Question pour Céline/Mathieu : je ne comprends pas la ligne ci-dessous qui vient de Initialirz -->
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 		
 		<!-- Lien pour aller chercher le fichier bootstrat.min.js dans mon dossier js dans mon dossier site -->
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="<?php bloginfo('template_directory'); ?>/js/vendor/bootstrap.min.js"></script>
 		
 		<!-- Lien pour aller chercher le fichier main.js dans mon dossier js dans mon dossier site -->
-        <script src="js/main.js"></script>
+        <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -71,6 +57,7 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
+        <?php wp_footer(); ?> <!-- shows the admin bar when logged in -->
 
     </body>
 </html>
