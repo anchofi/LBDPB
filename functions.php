@@ -21,8 +21,19 @@ function register_my_menus() {
 
 add_action( 'init', 'register_my_menus' );
 
+// Fonction ci-dessous pour rediriger vers la page construction quand l'utilisateur n'est pas connecté en tant que admin WP
+function redirect_construction () {
+  if( ! is_page('page-construction') AND ! is_super_admin ()) {
+    wp_redirect( home_url( "language/fr/page-construction/" ) );
+    exit;
+  }
+}
 
-// Pour modifier le css du premier élément car on ne peut pas le faire dans la plateforme WP
+add_action( 'parse_query', 'redirect_construction');
+
+
+
+// Pour modifier le css du premier élément car on ne peut pas le faire dans l'admin WP
 function first_item_nav_sec_css($items){
   /*var_dump($items);die;*/  /* Fonction de debug pour afficher tous les paramètres qui entrent en compte dans la fonction first_item_nav_sec_css($items) */
   foreach ($items as $key => $item) :
@@ -44,7 +55,7 @@ add_filter('wp_nav_menu_objects', 'first_item_nav_sec_css');
 // Utiliser un menu avec Bootstrap -- https://github.com/twittem/wp-bootstrap-navwalker
 require_once('wp_bootstrap_navwalker.php');
 
-
+/*
 // Mettre une sidebar avec des Widgets gérable dans la plateforme WP
 if ( function_exists('register_sidebar') ) {
     register_sidebar(array(
@@ -57,7 +68,7 @@ if ( function_exists('register_sidebar') ) {
         'after_title'   => '</h4>',
     ));
   }
-
+*/
 
 // Pour pouvoir utiliser WooCommerce dans mon thème WP
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);

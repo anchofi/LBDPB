@@ -31,8 +31,9 @@
 	<script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
 	<!-- Lien pour aller chercher la typo sympa dans Google Font que je veux utiliser pour ma nav de header -->
-	<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
-	
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+
 	<!-- Lien pour intégrer MailChimp -->
 	<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 		<style type="text/css">
@@ -81,7 +82,7 @@
 
 <nav class="navbar navbar-default green" role="navigation">
   
-  <div class="container-fluid" style="height:85px">
+  <div class="container-fluid">
     
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -93,7 +94,7 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/Logo_LBDPB_Petit.jpg" width="200px"></a>
+      <a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo_LBDPB.png" alt="Logo La Box du Pays Basque" width="200px"></a>
     
     </div> <!-- /.navbar-header -->
 

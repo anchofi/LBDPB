@@ -5,105 +5,228 @@
 
 /*----- Style des nav -----*/
 
+
+section#main { /* Pour descendre et décaler vers la droite le bloc central (visuel + texte) du produit "Abonnement mensuel" */
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+img.attachment-shop_single.wp-post-image { /* Pour décaler encore plus vers le centre le visuel produit */
+	margin-left: 150px;
+	margin-top: 10px;
+}
+
+h1.product_title.entry-title { /* Pour avoir la typo Ubuntu dans le titre du produit */
+	font-family: Ubuntu, sans-serif;
+	margin-top: -5px;
+}
+
+p.price { /* Pour styliser le prix dans la page produit */
+	font-family: Ubuntu, sans-serif;
+	font-size: 16px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+form.cart { /* Pour avoir la typo Ubuntu dans le champs Quantité et le bouton "Ajouter au panier" */
+	font-family: Ubuntu, sans-serif;
+	display: inline-flex; /* Pour mettre le bouton "Ajouter au panier" à côté et au lieu de dessous */
+	margin-bottom: 200px;
+}
+
+
+button.single_add_to_cart_button.button.alt { /* Pour styliser le bouton "Ajouter au panier" */
+	font-size: 12px;
+	height: 30px;
+	width: 150px;
+	color: white;
+	background-color: green;
+	font-weight: bold;
+	margin-top: -3px;
+}
+
+input.minus { /* Pour avoir un espace entre le moins et le chmp Quantité */
+	margin-right: 3px;
+	height: 25px;
+}
+
+input.plus { /* Pour avoir un espace entre le champ Quantité et le plus */
+	margin-left: 3px;
+	margin-right: 20px;
+	height:	25px;
+}
+
+input.input-text.qty.text { /* Pour définir le style du champ Quantité */
+	text-align: right;
+	width: 70px;
+	height: 25px;
+}
+
+body.customize-support { /* Pour réduire un peu la hauteur du petit header blanc */
+	margin-top: -12px;
+}
+
+.row-nav-secondaire { /* Pour la hauteur du petit header blanc */
+	height: 5px;
+}
+
 #menu-item-141-en a { /* Item English version dans nav sec */
-	font-family: Myriad Web Pro;
+	font-family: Ubuntu, sans-serif;
 	color: black;
+	margin-left: 14px;
+	-webkit-filter: grayscale(100%); /* Pour avoir le picto drapeau de WP en n&b */
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#menu-item-141-en a:hover {
+	text-decoration: none;
+	color: gray;
 }
 
 #menu-item-150-fr a { /* Item Version française dans nav sec */
-	font-family: Myriad Web Pro;
+	font-family: Ubuntu, sans-serif;
 	color: black;
+	margin-left: 18px;
+	-webkit-filter: grayscale(100%); /* Pour avoir le picto drapeau de WP en n&b */
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
-#menu-item-143 a { /* Se connecter / S'inscrire dans nav sec */
-	font-family: Myriad Web Pro;
+#menu-item-150-fr a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
+#menu-item-246 a { /* Mon compte dans nav sec */
+	font-family: Ubuntu, sans-serif;
 	color: black;
+	margin-left: 18px;
+}
+
+#menu-item-246 a:hover { /* Mon compte dans nav sec */
+	text-decoration: none;
+	color: gray;
 }
 
 .picto-cadenas {
 	display: inline-block;
-	width: 64px;
-	height: 24px;
-	background: url(img/lock.png);
+	width: 20px;
+	height: 16px;
+	background: url(img/lock.png) no-repeat; /* no-repeat sinon l'image se répète en boucle */
+	margin-left: -30px;
+	margin-bottom: -3px;
 }
 
-
-#menu-item-142 a { /* Mon Panier dans nav sec */
-	font-family: Myriad Web Pro;
+#menu-item-245 a { /* Mon panier dans nav sec */
+	font-family: Ubuntu, sans-serif;
 	color: black;
+	margin-left: 30px;
 }
 
-#menu-item-151 a { /* Sign in-Log in dans nav sec */
-	font-family: Myriad Web Pro;
+#menu-item-245 a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
+.picto-cart {
+	display: inline-block;
+	width: 20px;
+	height: 16px;
+	background: url(img/cart.png) no-repeat; /* no-repeat sinon l'image se répète en boucle */
+	margin-left: -30px;
+	margin-bottom: -3px;
+}
+
+#menu-item-214 a { /* My account dans nav sec */
+	font-family: Ubuntu, sans-serif;
 	color: black;
+	margin-left: 28px;
 }
 
-#menu-item-152 a { /* My cart dans nav sec */
-	font-family: Myriad Web Pro;
+#menu-item-214 a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
+#menu-item-220 a { /* My cart dans nav sec */
+	font-family: Ubuntu, sans-serif;
 	color: black;
+	margin-left: 35px;
 }
 
-.row-nav-secondaire {
-	height: 5px;
+#menu-item-220 a:hover {
+	text-decoration: none;
+	color: gray;
 }
 
 #menu-item-114 a { /* Comment ça marche dans nav principale */
-	padding-top: 15px;
-	padding-left: 35px;
+	padding-top: 20px;
+	padding-left: 65px;
 }
 
 #menu-item-113 a { /* Les produits dans nav principale */
-	padding-top: 23px;
-	padding-left: 45px;
+	padding-top: 30px;
+	padding-left: 75px;
 }
 
-#menu-item-112 a { /* S'abonner dans nav principale */
-	padding-top: 23px;
-	padding-left: 45px;
+#menu-item-247 a { /* S'abonner dans nav principale */
+	padding-top: 30px;
+	padding-left: 75px;
 }
+
+
+/* Abonnement mensuel nav de niveau 2 -- A VOIR -- */
+#menu-item-223 a { 
+	padding-top: 0;
+	padding-left: 15px;
+}
+/* -- */
+
 
 #menu-item-111 a { /* Offrir dans nav principale */
-	padding-top: 23px;
-	padding-left: 45px;
+	padding-top: 30px;
+	padding-left: 80px;
 }
 
-#menu-item-115 a { /* Boutique dans nav principale */
-	padding-top: 23px;
-	padding-left: 47px;
+#menu-item-103 a { /* How it works dans nav principale */
+	padding-top: 22px;
+	padding-left: 75px;
 }
 
 #menu-item-106 a { /* The Products dans nav principale */
-	padding-top: 23px;
+	padding-top: 30px;
+	padding-left: 80px;
 }
 
-#menu-item-107 a { /* Subscribe dans nav principale */
-	padding-top: 23px;
+#menu-item-226 a { /* Subscribe dans nav principale */
+	padding-top: 30px;
+	padding-left: 80px;
 }
 
 #menu-item-105 a { /* Offer dans nav principale */
-	padding-top: 23px;
-}
-
-#menu-item-104 a { /* E-shop dans nav principale */
-	padding-top: 23px;
+	padding-top: 30px;
+	padding-left: 80px;
 }
 
 .container-fluid {
+	height:85px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 200px;
 	padding-right: 15px;
 }
 
-.navbar li {
-	font-family: 'Gloria Hallelujah', cursive;
-	font-size: 18px;
+.navbar li { /* Style du texte de mon menu dans le header vert */
+	font-family: Walter Turncoat, cursive;
+	/* font-family: 'Gloria Hallelujah', cursive; */
+	font-size: 20px;
 	font-weight: bolder;
 	text-align: center;
 }
 
 .navbar .container .navbar-brand, .navbar .container-fluid .navbar-brand { /* .navbar-brand est mon logo dans ma nav */
-	margin-top: -28px;
+	margin-top: -29px;
 }
 
 .navbar-default .navbar-nav .active a { /* .active est la classe de ma nav qui indique le comportement de la nav sur la page active, la page du site sur laquelle on se trouve */
@@ -143,18 +266,18 @@
 
 .foot {
 	text-align: center;
-	padding-top: 2px;
+	margin-top: -10px;
+	/*padding-top: 2px;*/
 	line-height: 25px;
-	font-family: Myriad Web Pro;
+	font-family: Ubuntu, sans-serif;
 }
 
-
-
-/*---------------------- Style section = NOT OK -----------------------*/
+/*---------------------- Style section home = NOT OK -----------------------*/
 
 /* Avec cette image de fond en hp, mon footer n'est pas cassé dans ma front-page.php, alors que sur les autres pages sans image de fond, footer cassé ! */
 .partie-centrale {
-	background: url(img/Guethary_2.png);	
+	background: url(img/gelee.png);
+	/* background: url(img/guethary_2.png);	*/
 }
 
 #img-home {
@@ -162,19 +285,22 @@
 }
 
 .accroche {
-	font-family: Myriad Web Pro;
+	font-family: Ubuntu, sans-serif;
 	font-size: 30px;
-	font-weight: bold;
-	color: green;
+	font-weight: 500;
+	color: white;
+	text-shadow: -2px 0 green, 0 2px green, 2px 0 green, 0 -2px green; /* Pour donner un contour à ma typo */
 	padding-top: 65px;
 	padding-bottom: 45px;
-	padding-left: 20px;
+	padding-left: 22px;
+	margin-left: -6px;
 }
 
 .cta-hp {
-	font-family: Myriad Web Pro;
+	font-family: Ubuntu, sans-serif;
 	font-size: 24px;
-	font-weight: bold;
+	font-weight: 500;
+	margin-top: 10px;
 	padding: 5px;
 	border: solid;
 	border-color: green;
@@ -197,24 +323,73 @@
 	background-color: green;
 }
 
+/*------------------------ STYLE PAGE COMMENT ÇA MARCHE -----------------------*/
 
-/*------------------------------------------- Style footer -----------------------*/
+.container-1 .row-part-1 .lauburu-1 { /* Pour styliser la petite croix basque 1° colonne */
+	width: 25px;
+	margin-left: 28px;
+	margin-bottom: 8px;
+}
 
+.container-1 .row-part-1 .lauburu-2 { /* Pour styliser la petite croix basque 2° colonne */
+	width: 25px;
+	margin-left: 28px;
+	margin-bottom: 8px;
+}
+
+.container-1 .row-part-1 .lauburu-3 { /* Pour styliser la petite croix basque 3° colonne */
+	width: 25px;
+	margin-left: 28px;
+	margin-bottom: 8px;
+}
+
+.container-1 .row-part-1 { /* Pour styliser la 1° section de ma page */
+	font-family: Ubuntu, sans-serif;
+	padding-top: 30px;
+	background-color: #e8e6ce;
+	height:	220px;
+}
+
+.title-part-1 { /* Pour styliser le titre de la 1° section de ma page */
+	font-family: Ubuntu, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	width: 14em;
+}
+
+.container-2 .row-part-2 .plaques-chocolat { /* Pour styliser l'image des plaques de chocolat */
+	width: 330px;
+	margin-left: -110px;
+}
+
+.container-2 .row-part-2 { /* Pour styliser la 2° section de ma page */
+	font-family: Ubuntu, sans-serif;
+	padding-top: 5px;
+	background-color: #b29983; 
+	height:	457px;
+}
+
+.title-part-2 { /* Pour styliser le titre de la 2° section de ma page */
+	font-family: Ubuntu, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	width: 14em;
+}
+
+/*----------------------------------- STYLE FOOTER ALL PAGES -----------------------*/
 
 .foot a {
 	color: #42CA7E;
 	text-decoration: none;
 }
 
-
-
-
-/*------------------------------------------- Style foot bootstrap= OK -----------------------*/
+/*---------------------------------- Style foot bootstrap = OK -----------------------*/
 
 .navbar {
 	border-radius: 0;
 }
-
 
 /*------------------------------------------- Style WooCommerce -----------------------*/
 
@@ -224,7 +399,6 @@
 }
 */
 
-
 /* ----------------------------- Media Queries ---------------------------------------------------- */
 
 @media (min-width: 500px) {
@@ -233,6 +407,7 @@
 	}
 }
 
+/* 
 @media (min-width: 768px) {
 	.navbar-nav {
 		float: left;
@@ -240,6 +415,6 @@
 	}
 }
 
-
+*/
 
 

@@ -1,40 +1,39 @@
 
 <footer>
-		<ul class="foot">
-			<li>
-			Copyright © La Box du Pays Basque</a> -
-			</li>
-
-			<li>
-			<a href="#">Paiement sécurisé</a> -
-			</li>
-
-			<li>
-			<a href="#">Mentions légales / CGV</a> -
-			</li>
-
-			<li>
-			<a href="#">FAQ</a> -
-			</li>
-
-			<li>
-			<a href="mailto:bonjour@laboxdupaysbasque.com">Contact</a>
-			</li>
-		</ul>
-
-
 
 <!-- Intégration MailChimp pour email ou newsletter -->
 
-<div id="mc_embed_signup">
-	<form action="http://laboxdupaysbasque.us8.list-manage.com/subscribe/post?u=a3c4828996625dfa68b7d611b&amp;id=9320041a2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="E-mail pour recevoir les infos de La Box du Pays Basque" required style="display:inline; width:350px; font-family:Myriad Web Pro; font-size:13px; text-align: center; margin-left: 430px; margin-top: -15px;">
-    	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    	<div style="position: absolute; left: -5000px;"><input type="text" name="b_a3c4828996625dfa68b7d611b_9320041a2a" tabindex="-1" value=""></div>
-    	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="display:inline; width:120px; font-family: Myriad Web Pro; margin-left:-50px; margin-top: -15px;" >
-    	</div>
-	</form>
-</div><!--End mc_embed_signup-->
+	<div id="mc_embed_signup">
+		<form action="http://laboxdupaysbasque.us8.list-manage.com/subscribe/post?u=a3c4828996625dfa68b7d611b&amp;id=9f33111ad2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="E-mail pour recevoir les infos de La Box du Pays Basque" required style="display:inline; width:350px; font-family:Ubuntu, sans-serif; font-size:13px; text-align: center; margin-left: 445px; ">
+    		<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    		<div style="position: absolute; left: -5000px;"><input type="text" name="b_a3c4828996625dfa68b7d611b_9320041a2a" tabindex="-1" value=""></div>
+    		<div class="clear"><input type="submit" value="Valider" name="subscribe" id="mc-embedded-subscribe" class="button" style="display:inline; width: 90px; font-family: Ubuntu, sans-serif; font-weight: 500; margin-left:-50px; margin-top: 0;" >
+    		</div>
+		</form>
+	</div><!--End mc_embed_signup-->
+
+	<ul class="foot">
+		<li>
+		Copyright © La Box du Pays Basque</a> -
+		</li>
+
+		<li>
+		<a href="#">Paiement sécurisé</a> -
+		</li>
+	
+		<li>
+		<a href="#">Mentions légales / CGV</a> -
+		</li>
+
+		<li>
+		<a href="#">FAQ</a> -
+		</li>
+
+		<li>
+		<a href="mailto:bonjour@laboxdupaysbasque.fr">Contact</a>
+		</li>
+	</ul>
 
 </footer>
 
